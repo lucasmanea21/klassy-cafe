@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Title } from '../About Us/AboutComponents'
 
 const CardWrapper = styled.div `
     margin: 25px 35px;
@@ -48,7 +47,7 @@ const MealCard = () => {
     return (
         <CardWrapper id='card-wrapper'>
             <ContentWrapper id='content-wrapper'>
-                <ImgWrapper><img src='https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/tab-item-01.png' /></ImgWrapper>
+                <ImgWrapper><img src='https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/tab-item-01.png' alt='salad'/></ImgWrapper>
                 <InfoWrapper>
                     <h4>Fresh Chicken Salad</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>

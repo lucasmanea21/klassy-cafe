@@ -1,7 +1,6 @@
 import React from 'react'
 import { Desc, Title, Topline } from '../About Us/AboutComponents'
 import Button from '../Button'
-import { BtnWrapper } from '../HeroSection/HeroComponents'
 import ContactCard from './ContactCard'
 import * as Cp from './ContactComponents'
 import {contactData} from '../Data'

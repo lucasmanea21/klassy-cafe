@@ -95,11 +95,8 @@ export const SocialIcons = styled.div `
     justify-content: center;
     
        &:hover{
-        visibility: visible;
-        /* transition: 0.5s ease; */
+            visibility: visible;
          }
-    }
-
 `
 
 export const SocialLink = styled(Link)` 

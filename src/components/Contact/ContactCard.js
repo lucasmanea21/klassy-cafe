@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {FaPhoneAlt} from 'react-icons/fa'
 
 const CardWrapper= styled.div `
     background-color: #fff;
