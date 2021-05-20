@@ -3,8 +3,8 @@ import { menuItems } from '../Data'
 import Card from './Card'
 import * as Cp from './MenuComponents'
 import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import { Title, Topline } from '../About Us/AboutComponents'
 
 const MenuSection = () => {

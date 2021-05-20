@@ -2,11 +2,7 @@ import React from 'react'
 import '../../App.css'
 import Button from '../Button'
 import * as Cp from './HeroComponents'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-
-
+import Slider from "react-slick"
 import {heroPics} from '../Data'
 
 const HeroSection = () => {
