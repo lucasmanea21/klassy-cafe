@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+.slick-prev {
+  margin-left: 100px !important;
+  padding: 50px;
+  z-index: 2;
+  display: flex;
+  color: red !important;
+
+
+}
+.slick-prev:before {
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 4rem !important;
+  color: red !important;
+}
+.slick-next {
+  margin-right: 100px !important;
+  display:flex;
+  z-index: 2;
+  
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
