@@ -99,13 +99,17 @@ export const InputWrapper = styled.div `
         width: 41%;
         height: 35px;
         margin: 10px 0 ;
-        border-radius: 2px;
+        border-radius: 3px;
         border: 1px solid #212529;
         padding: 5px;
+       
+            @media screen and (max-width: 1000px) {
+                 width: 100%;
+            }
     }
     #message {
         width: 100%;
-        height: 100px;
+        padding-bottom: 100px;
     }
 `
 
