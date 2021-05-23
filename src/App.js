@@ -12,12 +12,12 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
-    <Navbar />
-    <HeroSection />
-    <AboutUs />
-    <MenuSection />
-    <ChefsSection />
-    <ContactSection />
+    <Navbar/>
+    <HeroSection name='home'/>
+    <AboutUs name='about'/>
+    <MenuSection name='menu'/>
+    <ChefsSection name='chefs'/>
+    <ContactSection name='contact'/>
     <MealsSection />
     <Footer />
     </>

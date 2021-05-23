@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import {Link as LinkR} from 'react-scroll'
 
 export const HeroWrapper = styled.div `
     width: 100%;
     display: flex;
     margin-bottom: 100px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     
     @media screen and (max-width: 1000px) {
         flex-direction: column;
@@ -23,7 +24,7 @@ export const HeroContent = styled.div `
     @media screen and (max-width: 1000px) {
         width: 100%;
         height: 30vh;
-        padding: 15px;
+        padding: 15px 0;
     }
 `
 export const CafeTitle = styled.div `
@@ -44,7 +45,7 @@ export const CafeDesc = styled.div `
     }
 `
 export const CafeBtn = styled.div ``
-export const BtnWrapper = styled.div `
+export const BtnWrapper = styled(LinkR) `
     background-color: #fff;
     display:flex;
     width: 180px;
@@ -71,4 +72,10 @@ export const HeroSliderSection = styled.div `
         height: 100vh;
     }
 `
-export const ImageWrapper = styled.div ``
+export const ImageWrapper = styled.div `
+    overflow: hidden !important;
+    img {
+
+        
+    }
+`

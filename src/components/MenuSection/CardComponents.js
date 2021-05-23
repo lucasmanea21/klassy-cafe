@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-scroll'
 
 export const CardWrapper = styled.div `
     display:flex;
@@ -66,6 +66,7 @@ export const BtnWrapper = styled(Link) `
     display: ${({hover}) => (hover ? 'flex' : 'none')};
     display: flex;
     color: #fff;
+    cursor:pointer;
     font-weight: 600;
     padding-top: 15px;
 `

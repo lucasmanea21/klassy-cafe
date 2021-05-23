@@ -8,7 +8,7 @@ export const MealsContent = styled.div `
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 45px 0;
+    padding: 35px 0 105px 0;
 `
 export const MealsInfo = styled.div `
     align-items: center;

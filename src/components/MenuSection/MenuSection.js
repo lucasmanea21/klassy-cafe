@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { Title, Topline } from '../About Us/AboutComponents'
 
-const MenuSection = () => {
+const MenuSection = ({name}) => {
     const settings = {
         dots: false,
         arrows: false,
@@ -15,6 +15,8 @@ const MenuSection = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 7000, 
         // variableWidth: true,
         responsive: [
            {
@@ -56,7 +58,7 @@ const MenuSection = () => {
        </Cp.CardWrapper>
       ))
     return (
-        <Cp.SectionWrapper>
+        <Cp.SectionWrapper name={name}>
             <Cp.ContentWrapper>
                     <Topline>Our Menu</Topline>
                     <Title>Our selection of cakes with quality taste</Title>

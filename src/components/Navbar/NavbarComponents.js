@@ -1,16 +1,19 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
+import {Link as LinkR} from 'react-scroll'
 import {CgMenuLeft} from 'react-icons/cg'
 import {GrClose} from 'react-icons/gr'
 import {MdKeyboardArrowDown } from 'react-icons/md'
 
 export const Nav = styled.div `
-    height: 100px;
-    background-color: #f7f7f7;
+    height: ${({scrollNav}) => (scrollNav ? '80px' : '100px')};
+    background-color: ${({scrollNav}) => (scrollNav ? '#fff' : '#f7f7f7')};
+    box-shadow: ${({scrollNav}) => (scrollNav ? '0px 0px 10px rgba(0,0,0,0.15)' : '0')};
     display:flex;
     width: 100%;
-    position: fixed;
+    position: ${({scrollNav}) => (scrollNav ? 'fixed' : 'static')};
     z-index: 99;
+    transition: 0.5s ease;
 `
 export const NavbarWrapper = styled.div `
     display:flex;
@@ -20,7 +23,12 @@ export const NavbarWrapper = styled.div `
     width: 100%;
     
 `
-export const LogoWrapper = styled.div ``
+export const LogoWrapper = styled.div `
+    
+    img {
+        cursor: pointer
+    }
+`
 export const ContentWrapper = styled.div `
     display:flex;
     width: 100%;
@@ -41,8 +49,9 @@ export const NavMenu = styled.div `
         display: none;
     }
 `
-export const NavLink = styled(Link) `
+export const NavLink = styled(LinkR) `
     color: #000;
+    cursor: pointer;
     text-decoration: none;
     padding: 0 15px;
     align-items: center;
@@ -151,6 +160,7 @@ export const NavItemB = styled.div `
     flex-direction: column;
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
+    z-index: 99;
 
     &:hover {
         p {

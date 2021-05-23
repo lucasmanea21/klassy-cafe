@@ -5,12 +5,12 @@ import ContactCard from './ContactCard'
 import * as Cp from './ContactComponents'
 import {contactData} from '../Data'
 
-const ContactSection = () => {
+const ContactSection = ({name}) => {
     const cards = contactData.map((item,index) => (
         <div id='item'><ContactCard {...item}/></div>
     ))
     return (
-        <Cp.SectionWrapper>
+        <Cp.SectionWrapper name={name}>
            <Cp.SectionContent>
                <Cp.SectionInfo>
                     <Topline id='text'>Contact Us</Topline>

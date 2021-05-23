@@ -3,11 +3,12 @@ import '../../App.css'
 import Button from '../Button'
 import * as Cp from './HeroComponents'
 import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import {heroPics} from '../Data'
 
-const HeroSection = () => {
+const HeroSection = ({name}) => {
     const pictures = heroPics.map((item,index) => {
-        console.log(item.src);
         return (
         <Cp.ImageWrapper>
             <img src={item.src} alt={item.alt} />
@@ -22,8 +23,9 @@ const HeroSection = () => {
         autoplay: true,
         autoplaySpeed: 5000,
       };
+
     return (
-        <Cp.HeroWrapper>
+        <Cp.HeroWrapper name={name}>
             <Cp.HeroContent>
                 <Cp.CafeTitle>
                <h4>KlassyCafe</h4> 
@@ -32,7 +34,7 @@ const HeroSection = () => {
                <h6>The best experience</h6> 
                 </Cp.CafeDesc>
                 <Cp.CafeBtn>
-                <Cp.BtnWrapper> <Button text='Make A Reservation'/> </Cp.BtnWrapper>
+                <Cp.BtnWrapper to="contact" spy={true} smooth={true} duration={500}> <Button text='Make A Reservation'/> </Cp.BtnWrapper>
                 </Cp.CafeBtn>
             </Cp.HeroContent>
             <Cp.HeroSliderSection>

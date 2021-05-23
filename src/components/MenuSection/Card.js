@@ -15,7 +15,7 @@ const Card = ({price, title, desc,img}) => {
                         {title}
                     </Cp.CardTitle>
                 <Cp.CardDesc hover={hover}>{desc}</Cp.CardDesc> 
-                <Cp.BtnWrapper hover={hover}>Make a reservation <DropdownIcon /> </Cp.BtnWrapper>
+                <Cp.BtnWrapper hover={hover} to="contact" spy={true} smooth={true} duration={500} offset={-100}>Make a reservation <DropdownIcon /> </Cp.BtnWrapper>
                 </Cp.InfoContent>
             </Cp.CardInfo>
         </Cp.CardWrapper>

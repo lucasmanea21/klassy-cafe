@@ -1,9 +1,9 @@
 import React from 'react'
 import * as Cp from './AboutComponents'
 
-const AboutUs = () => {
+const AboutUs = ({name}) => {
     return (
-        <Cp.AboutSection>
+        <Cp.AboutSection name={name}>
             <Cp.AboutContent>
                 <Cp.AboutDetails>
                     <Cp.Topline>About Us</Cp.Topline>

@@ -1,15 +1,19 @@
 export const data = [
     {
         title: 'Home',
+        to: 'home'
     },
     {
         title: 'About',
+        to: 'about'
     },
     {
         title: 'Menu',
+        to: 'menu'
     },
     {
         title: 'Chefs',
+        to: 'chefs'
     },
     {
         title: 'Features',
@@ -17,5 +21,6 @@ export const data = [
     },
     {
         title: 'Contact Us',
+        to: 'contact'
     },
 ]
