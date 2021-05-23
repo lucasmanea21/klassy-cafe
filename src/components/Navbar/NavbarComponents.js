@@ -140,12 +140,11 @@ export const MobileNavMenu = styled.div`
     width: 80%;
     /* margin-top: 250px; */
     position:fixed;
-    top: 100px;
+    top: 80px;
     background-color: #f7f7f7;
     justify-content: center;
     align-items: center;
     z-index: 3;
-    position: fixed;
 
     /* @media screen and (max-width: 700px) {
         display: flex;

@@ -42,7 +42,7 @@ const MenuSection = ({name}) => {
                 slidesToScroll: 1,
                 infinite: true,
                 centerMode: true,
-                centerPadding: 75,
+                // centerPadding: 75,
             }
            }                                   
         ]
