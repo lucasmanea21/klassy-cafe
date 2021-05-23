@@ -138,13 +138,12 @@ export const MobileNavMenu = styled.div`
     display: flex;
     flex-direction: column;
     width: 80%;
-    /* margin-top: 250px; */
-    position:fixed;
-    top: 80px;
+    position: ${({scrollNav}) => (scrollNav ? 'fixed' : 'absolute')};
+    top: ${({scrollNav}) => (scrollNav ? '80px' : '100px')};
     background-color: #f7f7f7;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 99;
 
     /* @media screen and (max-width: 700px) {
         display: flex;

@@ -84,8 +84,8 @@ const Navbar = () => {
                  </Cp.IconsWrapper>
            </Cp.NavbarWrapper>
         </Cp.Nav>
-        <Cp.MobileWrapper isOpen={isOpen}>
-            <Cp.MobileNavMenu >
+        <Cp.MobileWrapper isOpen={isOpen} >
+            <Cp.MobileNavMenu scrollNav={scrollNav}>
                 {navItemsMob}
            </Cp.MobileNavMenu>
         </Cp.MobileWrapper>
